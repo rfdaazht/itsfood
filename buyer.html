@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSFood - Buyer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <h2 class="logo">ITSFood</h2>
+            <div class="role-badge">
+                <span>🛒</span>
+                <span>Buyer</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="user-info">
+                <div class="user-avatar">👤</div>
+                <div>
+                    <div class="user-name">Muhammad Alfaraldi Raihan</div>
+                    <div class="user-id">5053241043</div>
+                </div>
+            </div>
+            <button class="logout-btn" onclick="window.location.href='index.html'">🚪</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="welcome-section">
+            <h1 class="welcome-title">Selamat Datang, Muhammad Alfaraldi Raihan!</h1>
+            <p class="welcome-subtitle">Temukan makanan favorit Anda dari seller kampus</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-section">
+            <h3 class="category-title">
+                <span class="filter-icon">🏷️</span>
+                Category
+            </h3>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="snack">Snack</button>
+                <button class="category-btn" data-category="minuman">Minuman</button>
+                <button class="category-btn" data-category="makanan-berat">Makanan Berat</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <h2 class="modal-header">Order Details</h2>
+
+            <div class="order-summary" id="orderSummary">
+                <!-- Order summary will be inserted here -->
+            </div>
+
+            <div class="form-group">
+                <label>Total:</label>
+                <div class="total-price" id="totalPrice">Rp. 0</div>
+            </div>
+
+            <div class="form-group">
+                <label>Jumlah</label>
+                <div class="quantity-control">
+                    <button class="qty-btn" id="decreaseQty">−</button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button class="qty-btn" id="increaseQty">+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Metode Pembayaran</label>
+                <div class="payment-methods">
+                    <button class="payment-btn active" data-payment="cod">Cash (COD)</button>
+                    <button class="payment-btn" data-payment="qris">QRIS</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Metode Pengiriman</label>
+                <div class="delivery-methods">
+                    <button class="delivery-btn active" data-delivery="pickup">Pickup</button>
+                    <button class="delivery-btn" data-delivery="delivery">Delivery</button>
+                </div>
+            </div>
+
+            <div class="pickup-location" id="pickupLocation">
+                <div class="location-info">
+                    <span>📍</span>
+                    <span id="locationText">Lokasi Pickup: Gedung Departemen TC - Lantai 1</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Catatan (Opsional)</label>
+                <textarea id="orderNotes" placeholder="Tambahkan catatan untuk seller..."></textarea>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closeModal()">Batal</button>
+                <button class="btn btn-primary" onclick="confirmOrder()">Konfirmasi Pemesanan</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/buyer.js"></script>
+</body>
+
+</html>

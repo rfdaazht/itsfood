@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSFood - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-card">
+            <h1 class="brand">ITSFood</h1>
+            <p class="subtitle">Login ke akun anda</p>
+
+            <form class="form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <div class="input-with-icon">
+                        <span class="icon">✉️</span>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <div class="input-with-icon">
+                        <span class="icon">🔒</span>
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary">Login</button>
+            </form>
+
+            <p class="register-link">
+                Belum punya akun? <a href="register.html">Daftar sekarang</a>
+            </p>
+
+            <hr class="divider">
+
+            <p class="demo-title">Demo Login:</p>
+            <div class="demo-buttons">
+                <button onclick="window.location.href='buyer.html'" class="btn btn-demo btn-buyer">Buyer</button>
+                <button onclick="window.location.href='seller.html'" class="btn btn-demo btn-seller">Seller</button>
+                <button onclick="window.location.href='admin.html'" class="btn btn-demo btn-admin">Admin</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

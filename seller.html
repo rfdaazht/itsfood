@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSFood - Seller</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <h2 class="logo">ITSFood</h2>
+            <div class="role-badge">
+                <span>🏪</span>
+                <span>Seller</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="user-info">
+                <div class="user-avatar">👤</div>
+                <div>
+                    <div class="user-name">Ledwino Galih Wandanu</div>
+                    <div class="user-id">5053241017</div>
+                </div>
+            </div>
+            <button class="logout-btn" onclick="window.location.href='index.html'">🚪</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Verification Banner -->
+        <div class="notification-banner">
+            <span class="notification-icon">✅</span>
+            <div class="notification-content">
+                <div class="notification-title">Toko Anda sudah terverifikasi!</div>
+                <div class="notification-message">Anda dapat mulai menerima pesanan dari buyer.</div>
+            </div>
+        </div>
+
+        <!-- Store Info -->
+        <div class="store-info">
+            <h2>Warung Risorisol</h2>
+            <p>📍 Gedung Departemen TC - Lantai 1</p>
+            <p>Jual makanan ringan & minuman segar setiap hari Senin-Jumat</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-info">
+                    <div class="stat-label">Total Produk</div>
+                    <div class="stat-value">02</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⏰</div>
+                <div class="stat-info">
+                    <div class="stat-label">Pesanan Pending</div>
+                    <div class="stat-value">00</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔔</div>
+                <div class="stat-info">
+                    <div class="stat-label">Notifikasi Baru</div>
+                    <div class="stat-value">01</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <div class="stat-info">
+                    <div class="stat-label">Total Penjualan</div>
+                    <div class="stat-value">Rp. 10.000,00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="notifikasi">Notifikasi</button>
+            <button class="tab-btn" data-tab="pesanan">Pesanan</button>
+            <button class="tab-btn" data-tab="produk">Produk Saya</button>
+        </div>
+
+        <!-- Tab Content: Notifikasi -->
+        <div class="tab-content active" id="notifikasi">
+            <div class="notification-list">
+                <div class="notification-item">
+                    <div class="notification-header">
+                        <h3>Pesanan Baru!</h3>
+                        <span class="notification-time">30/11/2024, 10.30.00</span>
+                    </div>
+                    <p>Anda mendapat pesanan 2 Risol Mayo (Rp 10.000) - Pembayaran: COD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Pesanan -->
+        <div class="tab-content" id="pesanan">
+            <div class="order-list">
+                <div class="order-card">
+                    <div class="order-header">
+                        <h3>Risol Mayo</h3>
+                        <span class="badge badge-yellow">Confirmed</span>
+                    </div>
+                    <p><strong>Pembeli:</strong> Steven Hartanto</p>
+                    <p><strong>Jumlah:</strong> 2</p>
+                    <p><strong>Pembayaran:</strong> COD</p>
+                    <p><strong>Catatan:</strong> Tolong dibungkus rapi ya~</p>
+                    <p><strong>Tanggal:</strong> 30/11/2024, 10.30.00</p>
+                    <div class="order-actions">
+                        <p><strong>Total: Rp. 10.000,00</strong></p>
+                        <p><strong>Pengiriman: Pickup</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Produk Saya -->
+        <div class="tab-content" id="produk">
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="css/images/risol-mayo.jpg" alt="Risol Mayo">
+                    <div class="product-item-info">
+                        <h3>Risol Mayo</h3>
+                        <p>Risol isi sayuran dengan mayonaise premium</p>
+                        <p class="price">Rp 5.000,00</p>
+                        <span class="badge">Snack</span>
+                    </div>
+                    <span class="status-badge status-available">Tersedia</span>
+                </div>
+                <div class="product-item">
+                    <img src="css/images/es-teh-manis.jpg" alt="Es Teh Manis">
+                    <div class="product-item-info">
+                        <h3>Es Teh Manis</h3>
+                        <p>Es teh manis segar ukuran sedang</p>
+                        <p class="price">Rp 3.000,00</p>
+                        <span class="badge">Minuman</span>
+                    </div>
+                    <span class="status-badge status-available">Tersedia</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/seller.js"></script>
+</body>
+
+</html>
