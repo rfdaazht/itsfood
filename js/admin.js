@@ -1,9 +1,9 @@
-/* ===================================
+/*
    DESIGN PATTERN: Command Pattern
    Location: Verification action handlers
    Purpose: Encapsulate actions as objects
    Source: Gang of Four Design Patterns
-   =================================== */
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
     // Verification buttons

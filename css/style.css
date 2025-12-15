@@ -1,9 +1,9 @@
-/* ===================================
-   DESIGN PATTERN: Component-Based CSS
-   Location: Entire file structure
-   Purpose: Reusable, modular styling components
-   Source: BEM (Block Element Modifier) methodology
-   =================================== */
+/*
+    DESIGN PATTERN: Component-Based CSS
+    Location: Entire file structure
+    Purpose: Reusable, modular styling components
+    Source: BEM (Block Element Modifier) methodology
+*/
 
 /* Global Styles */
 * {
@@ -42,9 +42,7 @@ body {
     padding: 20px;
 }
 
-/* ===================================
-   LOGIN & REGISTER COMPONENTS
-   =================================== */
+/* LOGIN & REGISTER COMPONENTS */
 
 .login-card,
 .register-card {
@@ -255,9 +253,7 @@ body {
     border-color: var(--primary-color);
 }
 
-/* ===================================
-   HEADER NAVIGATION
-   =================================== */
+/* HEADER NAVIGATION */
 
 .header {
     background: var(--white);
@@ -345,9 +341,7 @@ body {
     color: var(--danger);
 }
 
-/* ===================================
-   MAIN CONTENT
-   =================================== */
+/* MAIN CONTENT */
 
 .main-content {
     max-width: 1400px;
@@ -449,9 +443,7 @@ body {
     color: var(--white);
 }
 
-/* ===================================
-   PRODUCT GRID (BUYER)
-   =================================== */
+/* PRODUCT GRID (BUYER) */
 
 .product-grid {
     display: grid;
@@ -547,9 +539,7 @@ body {
     background: #0a1f3d;
 }
 
-/* ===================================
-   STATS CARDS
-   =================================== */
+/* STATS CARDS */
 
 .stats-grid {
     display: grid;
@@ -596,9 +586,7 @@ body {
     color: var(--text-dark);
 }
 
-/* ===================================
-   NOTIFICATIONS
-   =================================== */
+/* NOTIFICATIONS */
 
 .notification-banner {
     background: #fff3cd;
@@ -631,9 +619,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* ===================================
-   TABS
-   =================================== */
+/* TABS */
 
 .tabs {
     display: flex;
@@ -671,9 +657,7 @@ body {
     display: block;
 }
 
-/* ===================================
-   SELLER COMPONENTS
-   =================================== */
+/* SELLER COMPONENTS */
 
 .store-info {
     background: var(--white);
@@ -843,9 +827,7 @@ body {
     color: #155724;
 }
 
-/* ===================================
-   ADMIN COMPONENTS
-   =================================== */
+/* ADMIN COMPONENTS */
 
 .section-title {
     font-size: 1.5rem;
@@ -952,9 +934,7 @@ body {
     flex: 0;
 }
 
-/* ===================================
-   ORDER MODAL
-   =================================== */
+/* ORDER MODAL */
 
 .modal {
     display: none;
@@ -1116,9 +1096,7 @@ body {
     flex: 1;
 }
 
-/* ===================================
-   RESPONSIVE DESIGN
-   =================================== */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 1200px) {
     .product-grid {

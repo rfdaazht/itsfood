@@ -1,9 +1,9 @@
-/* ===================================
+/*
    DESIGN PATTERN: State Pattern
    Location: Tab switching functionality
    Purpose: Manage different UI states
    Source: Gang of Four Design Patterns
-   =================================== */
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
     const tabBtns = document.querySelectorAll('.tab-btn');

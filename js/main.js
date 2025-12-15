@@ -1,9 +1,9 @@
-/* ===================================
+/*
    DESIGN PATTERN: Event-Driven Programming
    Location: Event listeners and handlers
    Purpose: Reactive UI updates based on user actions
    Source: Observer Pattern (Gang of Four)
-   =================================== */
+*/
 
 // Role button toggle
 document.addEventListener('DOMContentLoaded', function () {
